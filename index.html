@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katyalova | Daycare, Spa and Clinic for Cats</title>
+  <!--------------- Bootstrap 4.6 CSS -------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!--------------- Custom CSS -------------->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--------------- Google Fonts -------------->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Gothic&family=Open+Sans:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--------------- Navbar -------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light row">
+    <a class="navbar-brand pl-5 pr-3" href="index.html">Katyalova</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Daycare
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Vacation Boarding</a>
+            <a class="dropdown-item" href="#">Transit Lodging</a>
+            <a class="dropdown-item" href="#">Long-term Care</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Guide and Requirements</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Spa</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clinic</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Our Philosophy</a>
+            <a class="dropdown-item" href="#">Our Team</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">We're hiring!</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link todos-nav" href="/todos">Todos</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content jumbotron jumbotron-fluid p-0 m-0">
+    <div class="welcome jumbotron jumbotron-fluid p-0 m-0">
+      <div class="welcome-text-container jumbotron jumbotron-fluid text-center px-4">
+
+        <h1 class="welcome-title display-2">Welcome to Katyalova.</h1>
+        <p class="welcome-text mt-3">Award winning pet daycare dedicated exclusively to caring for felines.</p>
+
+        <!-- Pricelist Pop Up -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-light mt-3" data-toggle="modal" data-target="#staticBackdrop">
+          Book Now
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Katya</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div> -->
+              <div class="modal-body">
+                <!-- Pricelist -->
+                <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                  <h2 class="">Pricing</h2>
+                  <p class="">Whether it’s caring for your beloved pet for a day or a month, our intelligently
+                    designed social and living quarters are built to look, feel and smell like home. Crafted for total
+                    feline wellbeing, each Katya Cat Care boast features that are most relevant for each cat’s needs
+                    outside of their comfort zone.</p>
+                </div>
+
+                <div class="container">
+                  <div class="card-deck mb-3 text-center">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-header">
+                        <h5 class="my-0 font-weight-normal">Daycare</h5>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title pricing-card-title">159K IDR <small class="text-muted">/ day</small>
+                        </h4>
+                        <p class="small">Katya provides comfort and restful reprieves for felines that focus on complete
+                          care for all
+                          their needs! Rates begin
+                          from just 99K IDR per night, for 24/7 air-conditioned, private lodging, play time and more.
+                        </p>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Book Now</button>
+                      </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-header">
+                        <h5 class="my-0 font-weight-normal">Spa</h5>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title pricing-card-title">139K IDR <small class="text-muted">/ session</small>
+                        </h4>
+                        <p class="small">We are able to provide express grooming services for your feline friend.
+                          Enquire with us if you’d like to pamper kitty with a soothing brushing session or have a nail
+                          clip done for safety purposes.</p>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                      </div>
+                    </div>
+                    <div class="card mb-4 shadow-sm">
+                      <div class="card-header">
+                        <h5 class="my-0 font-weight-normal">Clinic</h5>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title pricing-card-title">179K IDR <small class="text-muted">/ night</small>
+                        </h4>
+                        <p class="small">Our clinic can accommodate your feline for both
+                          short and extended periods of time. While staying in the clinic, your feline will be closely
+                          monitored and cared for by our team of doctors and technicians.</p>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="services container p-5">
+      <h1 class="text-center">Our Services</h1>
+      <div class="row p-3">
+
+        <div class="col-md-4 p-0 mx-auto">
+          <div class="img-bg"></div>
+          <div class="service-card p-3">
+            <h4>Daycare</h4>
+            <p class="small">Lorem blablablabla blablablabla blablablabla blablablabla blablablabla.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-0 mx-auto">
+          <div class="img-bg"></div>
+          <div class="service-card p-3">
+            <h4>Spa</h4>
+            <p class="small">Lorem blablablabla blablablabla blablablabla blablablabla blablablabla.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 p-0 mx-auto">
+          <div class="img-bg"></div>
+          <div class="service-card p-3">
+            <h4>Clinic</h4>
+            <p class="small">Lorem blablablabla blablablabla blablablabla blablablabla blablablabla.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--------------- Bootstrap 4.6 JS -------------->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
