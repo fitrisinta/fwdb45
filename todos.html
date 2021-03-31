@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Todo App</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katyalova | Daycare, Spa and Clinic for Cats</title>
     <!--------------- Bootstrap 4.6 CSS -------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -20,18 +19,120 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Gothic&family=Open+Sans:wght@700&display=swap"
         rel="stylesheet">
-
-    <!--------------- Custom JS -------------->
-    <script src="js/todos.js"></script>
 </head>
 
 <body>
-    <div class="todo">
-        <h1>Todo App</h1>
-        <form>
+    <!--------------- Navbar -------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light row">
+        <a class="navbar-brand pl-5 pr-3" href="index.html">Katyalova</a>
 
-        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Daycare
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Vacation Boarding</a>
+                        <a class="dropdown-item" href="#">Transit Lodging</a>
+                        <a class="dropdown-item" href="#">Long-term Care</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Guide and Requirements</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Spa</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clinic</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Our Philosophy</a>
+                        <a class="dropdown-item" href="#">Our Team</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">We're hiring!</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="todos.html">Todos</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content jumbotron jumbotron-fluid p-lg-5 mx-auto">
+        <div class="container-fluid">
+            <h1>Todo App</h1>
+            <form class="todo-form mt-4">
+                <div class="input-group mt-2">
+                    <label for="todo-input" class="input-group-text sr-only">Add a todo</label>
+                    <input type="text" class="todo-input form-control" id="todo-input" placeholder="Add a todo here...">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </form>
+
+            <ul class="todo-items mt-3">
+                <li class="item mt-2" data-key="1617029048522">
+                    <input type="checkbox" class="checkbox" null="">
+                    Eat
+                    <button class="delete-button btn btn-danger btn-sm">Delete</button>
+                </li>
+                <li class="item mt-2" data-key="1617029048522">
+                    <input type="checkbox" class="checkbox" null="">
+                    Pray
+                    <button class="delete-button btn btn-danger btn-sm">Delete</button>
+                </li>
+                <li class="item mt-2" data-key="1617029048522">
+                    <input type="checkbox" class="checkbox text-truncate null="">
+                    Code
+                    <button class=" delete-button btn btn-danger btn-sm">Delete</button>
+                </li>
+            </ul>
+        </div>
+
     </div>
+
+    <!--------------- Bootstrap 4.6 JS -------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!--------------- Custom JS -------------->
+    <script src="js/todos.js"></script>
+
 </body>
 
 </html>

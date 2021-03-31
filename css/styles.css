@@ -31,7 +31,7 @@ body, .navbar .bg-light, .content {
     color: #ff6969 !important;
 }
 
-.todos-nav {
+.active {
     color: #ff6969 !important;
 }
 
@@ -62,9 +62,6 @@ div.modal-content {
     width: 75vw;
 }
 
-/* .btn-dark {
-    background-color:#142433;
-} */
 
 .services h1 {
     font-family: 'Open Sans', sans-serif;
