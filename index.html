@@ -59,7 +59,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="blog.html">Blog</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -68,15 +68,15 @@
             About
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Our Philosophy</a>
-            <a class="dropdown-item" href="#">Our Team</a>
+            <a class="dropdown-item" href="about.html">Our Philosophy</a>
+            <a class="dropdown-item" href="about.html">Our Team</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">We're hiring!</a>
+            <a class="dropdown-item" href="about.html">We're hiring!</a>
           </div>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
 
         <li class="nav-item">
@@ -88,6 +88,7 @@
   </nav>
 
   <div class="content jumbotron jumbotron-fluid p-0 m-0">
+
     <div class="welcome jumbotron jumbotron-fluid p-0 m-0">
       <div class="welcome-text-container jumbotron jumbotron-fluid text-center px-4">
 
@@ -105,12 +106,6 @@
           aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
-              <!-- <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Katya</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div> -->
               <div class="modal-body">
                 <!-- Pricelist -->
                 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -180,37 +175,62 @@
 
     </div>
 
-    <div class="services container p-5">
-      <h1 class="text-center">Our Services</h1>
-      <div class="row p-3">
-
-        <div class="col-md-4 p-0 mx-auto">
-          <div class="img-bg"></div>
-          <div class="service-card p-3">
-            <h4>Daycare</h4>
-            <p class="small">Lorem blablablabla blablablabla blablablabla blablablabla blablablabla.</p>
-          </div>
+    <div class="about jumbotron jumbotron-fluid row pb-xl-5 mb-xl-5">
+      <div class="img-wrap col-lg-6 p-0">
+        <div class="about-img-bg bg-1">
         </div>
-
-        <div class="col-md-4 p-0 mx-auto">
-          <div class="img-bg"></div>
-          <div class="service-card p-3">
-            <h4>Spa</h4>
-            <p class="small">Lorem blablablabla blablablabla blablablabla blablablabla blablablabla.</p>
-          </div>
+        <div class="about-img-bg bg-2">
         </div>
+        <img class="about-img img-1  float-left"
+          src="https://images.unsplash.com/photo-1594296671806-ad20299837d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60">
+        <img class="about-img img-2"
+          src="https://images.unsplash.com/photo-1574858819445-747e591499b8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60">
+      </div>
+      <div class="copy-wrap col-lg-6 mt-5 mt-lg-2 pt-xl-2 pb-xl-5 mb-xl-5">
+        <p class=" mt-md-3">Why Choose</p>
+        <span class="kl display-4">Katyalova?</span>
+        <ul class="">
+          <li><span class="checkmark mx-2">✔︎</span>Each of our private cabins is equipped with separate
+            play, rest and bathroom areas for a comfortable stay.</li>
+          <li class="mt-3"><span class=" checkmark mx-2">✔︎</span>We have set exemplary standards for higher levels of
+            transparency,
+            safety and quality care for cats.</li>
+          <li class="mt-3"><span class=" checkmark mx-2">✔︎</span>We are committed to helping you care for the physical,
+            emotional and
+            mental needs of your feline friends
+          </li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="col-md-4 p-0 mx-auto">
-          <div class="img-bg"></div>
-          <div class="service-card p-3">
-            <h4>Clinic</h4>
-            <p class="small">Lorem blablablabla blablablabla blablablabla blablablabla blablablabla.</p>
+    <div class="newsletter jumbotron jumbotron-fluid my-0 mx-auto py-lg-5">
+      <div class="container w-lg-75  mx-auto">
+        <h5 class="text-center px-5">Subscribe to our newsletters and get a special discount for your first purchase!
+        </h5>
+        <form class="form-inline mt-5 px-2" action=" https://formspree.io/f/xleaeloy" method="POST">
+          <div class="form-group mb-2 ml-1 ml-md-4">
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" name="_replyto" class="form-control" id="name" aria-describedby="nameHelp"
+              placeholder="e.g. Kitty Katya">
           </div>
-        </div>
-
+          <div class="form-group mb-2 ml-2 ml-md-4">
+            <label for="email" class="sr-only">Email address</label>
+            <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp"
+              placeholder="example@mail.com">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2 ml-2 ml-md-4">Subscribe</button>
+        </form>
+        <hr>
       </div>
     </div>
   </div>
+
+  <div class="footer jumbotron jumbotron-fluid my-0 mx-auto py-0 bg-light">
+    <div class="container py-3">
+      <p class="small text-muted text-center">Crafted with ♥︎ by <span>Fitri Sinta</span>.</p>
+    </div>
+  </div>
+
 
   <!--------------- Bootstrap 4.6 JS -------------->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

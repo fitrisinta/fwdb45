@@ -89,38 +89,45 @@
     </nav>
 
     <div class="content jumbotron jumbotron-fluid p-lg-5 mx-auto">
-        <div class="container-fluid">
+
+        <div class="todo-wrap container-fluid">
             <h1>Todo App</h1>
             <form class="todo-form mt-4">
                 <div class="input-group mt-2">
                     <label for="todo-input" class="input-group-text sr-only">Add a todo</label>
                     <input type="text" class="todo-input form-control" id="todo-input" placeholder="Add a todo here...">
                     <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary">Add</button>
+                        <button type="submit" class="add-button btn btn-primary">Add</button>
                     </div>
                 </div>
             </form>
 
-            <ul class="todo-items mt-3">
-                <li class="item mt-2" data-key="1617029048522">
-                    <input type="checkbox" class="checkbox" null="">
-                    Eat
+            <ul class="todo-items mt-3 mx-0 px-0">
+                <li class="item mt-2 mx-auto row justify-content-between" data-key="1617029048522">
+                    <input type="checkbox" class="strikethrough mx-1 checkbox">
+                    <span>Pray</span>
                     <button class="delete-button btn btn-danger btn-sm">Delete</button>
                 </li>
-                <li class="item mt-2" data-key="1617029048522">
-                    <input type="checkbox" class="checkbox" null="">
-                    Pray
+                <li class="item mt-2 mx-auto row justify-content-between" data-key="1617029048522">
+                    <input type="checkbox" class="strikethrough mx-1 checkbox">
+                    <span>Code</span>
                     <button class="delete-button btn btn-danger btn-sm">Delete</button>
-                </li>
-                <li class="item mt-2" data-key="1617029048522">
-                    <input type="checkbox" class="checkbox text-truncate null="">
-                    Code
-                    <button class=" delete-button btn btn-danger btn-sm">Delete</button>
                 </li>
             </ul>
+
         </div>
 
     </div>
+
+
+
+    <!-- <div class="container" data-video="roughtzsCDI" data-autoplay="0" data-loop="1" id="youtube-audio" width="30">
+    </div> -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+
+
+
 
     <!--------------- Bootstrap 4.6 JS -------------->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -131,7 +138,7 @@
         crossorigin="anonymous"></script>
 
     <!--------------- Custom JS -------------->
-    <script src="js/todos.js"></script>
+    <script type="text/javascript" src="js/todos.js"></script>
 
 </body>
 

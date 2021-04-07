@@ -17,12 +17,17 @@ font-family: 'Open Sans', sans-serif;
 
 */
 
-p {
+p, li, h4, h5, input, button {
     font-family: 'Nanum Gothic', sans-serif;
 }
 
-body, .navbar .bg-light, .content {
-    background-color: white;
+.katyalova {
+    font-family: 'Indie Flower', cursive;
+    color: #ff6969 !important;
+}
+
+body, nav, .navbar .bg-light, .content, .about {
+    background-color: white ;
 }
 
 .navbar-brand {
@@ -31,8 +36,24 @@ body, .navbar .bg-light, .content {
     color: #ff6969 !important;
 }
 
-.active {
+.active, footer span {
     color: #ff6969 !important;
+}
+
+.btn-primary {
+background-color: #ff6969 !important;
+outline: none;
+border: none;
+}
+
+.btn-outline-primary {
+    border: 1px solid #ff6969;
+    color: #ff6969;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff6969;
+    border: none;
 }
 
 
@@ -62,37 +83,133 @@ div.modal-content {
     width: 75vw;
 }
 
-
 .services h1 {
     font-family: 'Open Sans', sans-serif;
     color: #3e4234;
 }
 
-div.img-bg {
-    height: 30vh;
-    overflow: hidden;
-    background-position: 50% 50%; background-size: cover;
+div.daycare-bg {
     background-image: url("https://images.unsplash.com/photo-1574858819445-747e591499b8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
 }
 
-.services .img-bg:hover {
+div.spa-bg {
+    background-image: url("https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+}
+
+div.clinic-bg {
+    background-image: url("https://images.unsplash.com/photo-1594296671806-ad20299837d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
+}
+
+.services h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: relative;
+    z-index: 2;
+    top: -80px;
+    font-size: 36px;
+}
+
+div.img-bg {
+    height: 40vh;
+    overflow: hidden;
+    background-position: 50% 50%; background-size: cover;
+}
+
+.service-card button.btn-sm {
+    font-size: 10px;
+    border: none;
+    border-bottom: 1 px solid gray !important;
+}
+
+.services div.img-bg:hover {
     background-size: cover;
-    height: 32vh;
+    height: 42vh;
+    filter: opacity(60%);
 }
 
-.service-card {
-    border-left:1px solid rgba(0,0,0,.125);
-    height: 20vh;
-    /* box-shadow: .125rem  0 .25rem rgba(0,0,0,.075)!important; */
-}
-/* 
-.services .card {
-    
-    border: 1px solid rgba(0,0,0,.125);
-    border-bottom: none;
+.services .img-bg:hover + .service-card h4 {
+    top: -120px;
+    filter: none;
+    color: black
 }
 
-.services .shadow-sm {
-    box-shadow: .125rem 0  .25rem rgba(0,0,0,.075)!important;
-    border-bottom: none;
-} */
+.hide {
+    display: none;
+}
+
+.img-wrap {
+    height: 100px;
+}
+
+.about-img-bg {
+    height: 100px;
+    position: relative;
+}
+
+.bg-1 {
+    background-color: seashell;
+    height: 200px;
+    z-index: 3;
+    bottom: 40px;
+    top: 100px;
+    left: 40px;
+}
+
+.bg-2 {
+    width: 70%;
+    height: 280px;
+    z-index: 2;
+    left: 150px;
+    top: -160px;
+    border: 1px solid #ff6969;
+}
+
+.about-img {
+    width: 50%;
+    height: auto;
+}
+
+.img-1 {
+    position: relative;
+    z-index: 5;
+    left: 50px;
+    top: -400px;
+}
+
+.img-2 {
+    position: relative;
+    z-index: 4;
+    top: -450px;
+    right: 40px;
+}
+
+.copy-wrap {
+    padding: 0 100px;
+}
+
+.about span.kl{
+    font-family: 'Indie Flower', cursive;
+    color: #ff6969 !important;
+    position: relative;
+    z-index: 4;
+    top: -25px;
+    left: 40px;
+}
+
+.about li {
+    list-style-type: none;
+}
+
+div.newsletter {
+    width: 100vw;
+    background-color: #fcf2ef;
+    clear: both;
+    z-index: 500;
+    position: relative;
+}
+
+.form-inline {
+    width: 600px;
+    margin: 0 auto;
+}
+
