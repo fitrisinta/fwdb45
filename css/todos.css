@@ -21,6 +21,7 @@ width: 80vw;
     float: right;
     border: none;
     outline: none;
+    background-color: #ff6969;
 }
 
 .item:hover {
