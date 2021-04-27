@@ -1,33 +1,25 @@
 /* Color
-Peach:
-Gold: 	#d5c68d
-Turqoise:  #5cc8b6
-green dark very: #3e4234
-Green dark : #9ca683
-Green 2: #bcc6a7
 Dark: #142433
-Light 1: #f5f3e6	
-Light 2: #e4dec2
 Pink: #ff6969
+Seashell; #fff5ee
 
 Fonts:
 font-family: 'Indie Flower', cursive;
 font-family: 'Nanum Gothic', sans-serif;
-font-family: 'Open Sans', sans-serif;
-
+font-family: 'Open Sans Condensed', sans-serif;
 */
 
-p, li, h4, h5, input, button {
+body {
     font-family: 'Nanum Gothic', sans-serif;
+}
+
+body, nav, .navbar .bg-light, .content, .about {
+    background-color: white ;
 }
 
 .katyalova {
     font-family: 'Indie Flower', cursive;
     color: #ff6969 !important;
-}
-
-body, nav, .navbar .bg-light, .content, .about {
-    background-color: white ;
 }
 
 .navbar-brand {
@@ -36,19 +28,28 @@ body, nav, .navbar .bg-light, .content, .about {
     color: #ff6969 !important;
 }
 
-.active, footer span {
+.active, .footer span {
     color: #ff6969 !important;
 }
 
 .btn-primary {
-background-color: #ff6969 !important;
-outline: none;
-border: none;
+    background-color: #ff6969 !important;
+    outline: none;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.btn-primary:hover {
+    background-color: white !important;
+    outline: #ff6969 !important;
+    border: 1px solid #ff6969 !important;
+    color: #ff6969 !important;
 }
 
 .btn-outline-primary {
     border: 1px solid #ff6969;
     color: #ff6969;
+    transition-duration: 0.4s;
 }
 
 .btn-outline-primary:hover {
@@ -56,6 +57,11 @@ border: none;
     border: none;
 }
 
+.dropdown-item:hover {
+    background-color: seashell;
+}
+
+/* Welcome */
 
 .welcome {
     background-image: url("https://images.unsplash.com/photo-1604484673711-8b3905b86920?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
@@ -83,121 +89,51 @@ div.modal-content {
     width: 75vw;
 }
 
-.services h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: #3e4234;
-}
+/* About */
 
-div.daycare-bg {
-    background-image: url("https://images.unsplash.com/photo-1574858819445-747e591499b8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
-}
-
-div.spa-bg {
-    background-image: url("https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
-}
-
-div.clinic-bg {
-    background-image: url("https://images.unsplash.com/photo-1594296671806-ad20299837d2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjF8fGNhdCUyMGh1bWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60");
-}
-
-.services h4 {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    position: relative;
-    z-index: 2;
-    top: -80px;
-    font-size: 36px;
-}
-
-div.img-bg {
-    height: 40vh;
-    overflow: hidden;
-    background-position: 50% 50%; background-size: cover;
-}
-
-.service-card button.btn-sm {
-    font-size: 10px;
+.about .card {
+    box-shadow: 0px 20px 40px rgb(0 0 0 / 10%);
     border: none;
-    border-bottom: 1 px solid gray !important;
+    max-width: 300px;
 }
 
-.services div.img-bg:hover {
-    background-size: cover;
-    height: 42vh;
-    filter: opacity(60%);
-}
-
-.services .img-bg:hover + .service-card h4 {
-    top: -120px;
-    filter: none;
-    color: black
-}
-
-.hide {
-    display: none;
-}
-
-.img-wrap {
-    height: 100px;
-}
-
-.about-img-bg {
-    height: 100px;
-    position: relative;
-}
-
-.bg-1 {
-    background-color: seashell;
-    height: 200px;
-    z-index: 3;
-    bottom: 40px;
-    top: 100px;
-    left: 40px;
-}
-
-.bg-2 {
-    width: 70%;
-    height: 280px;
-    z-index: 2;
-    left: 150px;
-    top: -160px;
-    border: 1px solid #ff6969;
-}
-
-.about-img {
-    width: 50%;
-    height: auto;
-}
-
-.img-1 {
-    position: relative;
-    z-index: 5;
-    left: 50px;
-    top: -400px;
-}
-
-.img-2 {
-    position: relative;
-    z-index: 4;
-    top: -450px;
-    right: 40px;
-}
-
-.copy-wrap {
-    padding: 0 100px;
-}
-
-.about span.kl{
-    font-family: 'Indie Flower', cursive;
+.about .fa {
+    font-size: 28px !important;
     color: #ff6969 !important;
-    position: relative;
-    z-index: 4;
-    top: -25px;
-    left: 40px;
 }
 
-.about li {
-    list-style-type: none;
+/* Testimonials  */
+
+.social-proof {
+    background-color: none !important;
+}
+
+.social-proof .card {
+    border: none;
+}
+
+.fa-star {
+    font-size: 28px !important;
+    color: #ff6969 !important;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: none;
+    margin-bottom: none !important;
+}
+
+.card-header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover
+}
+
+/* Newsletter */
+
+.newsletter .btn-primary:hover {
+    background-color: seashell !important;
 }
 
 div.newsletter {
@@ -209,7 +145,112 @@ div.newsletter {
 }
 
 .form-inline {
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
+
+/* Book Daycare */
+
+.book-cta {
+    background-color: white !important;
+}
+
+.book-cta .card {
+    box-shadow: 0px 20px 40px rgb(0 0 0 / 10%);
+    border: none;
+    max-width: 800px;
+}
+
+/* Footer */
+
+.footer {
+    font-size: 14px;
+    background-color: seashell !important;
+}
+
+.footer-links a {
+    display: block;
+    color: #212529;
+    text-decoration: none;
+}
+
+.footer .fa {
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+.footer .fa:hover, .footer-links a:hover {
+    color: #ff6969 !important;
+    
+}
+
+
+
+/* About Page */
+
+.about-us {
+    background-color: seashell;
+}
+
+.about-img {
+    width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.team-img {
+    width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
+/* Contact Page */
+
+.form-contact {
+    max-width: 800px;
+}
+
+.fa-envelope {
+    font-size: 48px !important;
+    color: #ff6969 !important;
+}
+
+
+/* Blog Page */
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.blog-thumbnails img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-header {
+    background-color: seashell;
+}
+
+.blog-header button:hover {
+    background-color: seashell !important;
+}
+
+.blog-archive .card {
+    box-shadow: 0px 20px 40px rgb(0 0 0 / 10%);
+    border: none;
+}
+
+.blog-archive img {
+    object-fit: cover;
+}
+
+.blog-title {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #ff6969;
+}

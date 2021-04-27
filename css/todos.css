@@ -1,5 +1,6 @@
 .todo-wrap {
 width: 80vw;
+min-height: 65vh;
 }
 
 .item {
