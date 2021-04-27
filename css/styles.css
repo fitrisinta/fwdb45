@@ -1,5 +1,4 @@
 /* Color
-Dark: #142433
 Pink: #ff6969
 Seashell; #fff5ee
 
@@ -39,7 +38,7 @@ body, nav, .navbar .bg-light, .content, .about {
     transition-duration: 0.4s;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:visited, .btn-primary:active {
     background-color: white !important;
     outline: #ff6969 !important;
     border: 1px solid #ff6969 !important;
@@ -52,9 +51,9 @@ body, nav, .navbar .bg-light, .content, .about {
     transition-duration: 0.4s;
 }
 
-.btn-outline-primary:hover {
-    background-color: #ff6969;
-    border: none;
+.btn-outline-primary:hover, .btn-outline-primary:visited, .btn-outline-primary:active {
+    background-color: #ff6969 !important;
+    border: none !important;
 }
 
 .dropdown-item:hover {
@@ -186,8 +185,7 @@ div.newsletter {
 }
 
 
-
-/* About Page */
+/******** About Page ********/
 
 .about-us {
     background-color: seashell;
@@ -206,7 +204,7 @@ div.newsletter {
 }
 
 
-/* Contact Page */
+/******** Contact Page ********/
 
 .form-contact {
     max-width: 800px;
@@ -217,8 +215,12 @@ div.newsletter {
     color: #ff6969 !important;
 }
 
+.form-contact .form-control:focus {
+    border: 1px solid #ff6969 !important;
+}
 
-/* Blog Page */
+
+/******** Blog Page ********/
 
 .carousel-item img {
     height: 400px;
